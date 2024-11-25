@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+#  🚙Projet de vente et traçabilité des voitures sur Blockchain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌐 Introduction
 
-## Available Scripts
+La blockchain et les NFT (Non-Fungible Tokens) transforment la manière dont les biens numériques sont représentés et échangés. Ce projet se concentre sur le développement d'une DApp (Decentralized Application) pour gérer et afficher des voitures sous forme de NFT en utilisant React, Web3, et les smart contracts sur Ethereum.
 
-In the project directory, you can run:
+### 🎯 Objectif du Projet
 
-### `npm start`
+Notre objectif principal est de créer une plateforme innovante qui facilitera la vente et la création des voitures avec la certification de constructeur et la possibilité de retracer les différents propriétaires d'un même véhicule.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Création des voitures** : Créer les voitures sous forme de NFT et les associer à un utilisateur.
+- **Affichage de détails des voitures** : Récupération des détails de chaque Voiture.
+- **Réduire le besoin d'intermédiaires** : Limiter le nombre d'acteurs impliqués dans la transaction pour diminuer les coûts.
+- **Offrir des options de paiement en cryptomonnaies** : Élargir les possibilités de paiement pour les utilisateurs.
+- **Assurer une traçabilité complète des proprietères** : Permettre un suivi transparent de l'historique des proprietères.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## 💻 Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation de Ganache
 
-### `npm run build`
+Pour installer Ganache, vous avez deux options :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Interface graphique** :
+   - Téléchargez l'interface graphique depuis le site officiel de Truffle.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Version CLI** :
+   - Installez la version CLI via npm :
+     ```bash
+     npm install -g ganache
+     ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Téléchargement direct** :
+   - Vous pouvez également télécharger Ganache à partir de [ce site](https://archive.trufflesuite.com/ganache/).
 
-### `npm run eject`
+### Configuration de MetaMask
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Installez l'extension MetaMask dans votre navigateur. Vous pouvez l'ajouter à Google Chrome via le Chrome Web Store.
+2. Créez un nouveau portefeuille ou importez-en un existant.
+3. Configurez les comptes MetaMask avec les clés privées des comptes Ganache.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation de Node.js, Truffle
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Installer Node.js** :
+   - Téléchargez et installez Node.js à partir du [site officiel](https://nodejs.org/).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Installer truffle** :
+   - Dans votre terminal, exécutez :
+     ```bash
+     npm install -g truffle
+     ```
 
-## Learn More
+## 🚀 Démarrage du Projet
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Pour lancer le projet, suivez ces étapes :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Ouvrir Ganache** :
+   - Lancez Ganache pour créer un environnement de développement local pour vos transactions Blockchain.
+  
+2. **Installer les dépendances** :
+    - Naviguez dans le répertoire du projet et exécuter cette commande :
+       ```bash
+       npm install 
+       ```
 
-### Code Splitting
+2. **Backend** :
+   - Configurer le deployment script dans votre project pour utiliser votre réseau ganache local:
+     ```bash
+     truffle migrate -reset
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Frontend** :
+   - Naviguez dans le répertoire du frontend et démarrez l'application React :
+     ```bash
+     npm start
+     ```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Utilisation
 
-### Making a Progressive Web App
+Pour utiliser l'application, suivez ces étapes :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Ouvrez votre navigateur et accédez à `http://localhost:3000`.
+2. Créez un compte ou connectez-vous si vous en avez déjà un.
+3. Naviguez dans la plateforme et commencer à créer vos voitures.
+4. Effectuez des transactions en utilisant les options de paiement disponibles.
 
-### Advanced Configuration
+## 🛠️ Technologies Utilisées
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Smart contract Solidity** : Explication rapide de la définition et de l'implémentation du contrat CarFactory.
+- **Node.js** : Pour le développement du backend.
+- **React** : Pour l'interface utilisateur.
+- **ether et web3** : Pour la connexion et l'interaction avec Ethereum.
+  
+## 📋 Présentation du Projet
 
-### Deployment
+Ce projet innovant utilise la technologie Blockchain pour simplifier et sécuriser le processus de vente des voitures. Voici un aperçu des principales fonctionnalités de l'application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 1. Créer une voiture (Create Car)
 
-### `npm run build` fails to minify
+Cette fonctionnalité permet aux utilisateurs de créer des voitures à la plateforme. L'interface est conçue pour être intuitive et facile à utiliser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Ajouter un Bien](add.png)
+
+### 2. Mes voitures (My Cars)
+
+Dans cette section, les utilisateurs peuvent consulter leurs propriétés enregistrées qui seront automatiquement disponibles pour vente pour autres utilisateurs.
+
+![Mes Propriétés](mesp.png)
+![Mes Propriétés](sella.png)
+
+
+### 3. Voitures disponibles (Available cars)
+
+Les utilisateurs peuvent explorer toutes les voitures disponibles sur la plateforme. Chaque propriété peut être achetée en cliquant sur le bouton "Buy".
+
+![Toutes les Propriétés](allp1.png)
+
+### Historique des propriétaires
+
+Les utilisateurs peuvent accéder à leur historique de transactions en cliquant sur le bouton "Show History". Cela ouvre une interface dédiée où ils peuvent consulter tous les propriétaires précedants du voiture.
+
+![Historique des Transactions](historique.png)
+
+## 🏁 Conclusion
+
+Cette application de vente immobilière sur Blockchain vise à révolutionner le marché des voitures en rendant les transactions plus simples, plus rapides et plus sécurisées. Nous espérons que notre plateforme apportera une véritable valeur ajoutée aux utilisateurs, tout en leur offrant une expérience utilisateur exceptionnelle. 🌟
