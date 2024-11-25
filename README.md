@@ -100,27 +100,26 @@ Ce projet innovant utilise la technologie Blockchain pour simplifier et sécuris
 
 Cette fonctionnalité permet aux utilisateurs de créer des voitures à la plateforme. L'interface est conçue pour être intuitive et facile à utiliser.
 
-![Ajouter un Bien](add.png)
+![Ajouter une voiture](images/create-car.png)
 
 ### 2. Mes voitures (My Cars)
 
 Dans cette section, les utilisateurs peuvent consulter leurs propriétés enregistrées qui seront automatiquement disponibles pour vente pour autres utilisateurs.
 
-![Mes Propriétés](mesp.png)
-![Mes Propriétés](sella.png)
+![Mes Voitures](images/my_car.png)
 
 
 ### 3. Voitures disponibles (Available cars)
 
 Les utilisateurs peuvent explorer toutes les voitures disponibles sur la plateforme. Chaque propriété peut être achetée en cliquant sur le bouton "Buy".
 
-![Toutes les Propriétés](allp1.png)
+![Voitures disponibles](images/acceuil.png)
 
 ### Historique des propriétaires
 
 Les utilisateurs peuvent accéder à leur historique de transactions en cliquant sur le bouton "Show History". Cela ouvre une interface dédiée où ils peuvent consulter tous les propriétaires précedants du voiture.
 
-![Historique des Transactions](historique.png)
+![Historique des propriétaires](images/car-history.png)
 
 ## 🏁 Conclusion
 
