@@ -1,0 +1,247 @@
+/* App.css */
+.title {
+  font-size: 2.5rem; /* Increased font size for emphasis */
+  font-weight: bold;
+  color: #007bff; /* Eye-catching blue color */
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 1.5px; /* Adds some spacing between letters */
+  text-transform: uppercase; /* Converts the text to uppercase for a formal look */
+}
+
+header {
+  background-color: #f8f9fa; /* Light background to make the title stand out */
+  padding: 20px 0;
+  border-bottom: 2px solid #007bff; /* Adds a blue border below the header */
+}
+
+.account-button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Vert */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 15px;
+  width: fit-content;
+}
+.account-button:hover {
+  background-color: #45a049; /* Changement de couleur au survol */
+}
+
+.cars-container {
+  border: 4px solid #ccc;
+  padding: 20px;
+  margin: 30px auto;
+  width: 1400px;
+  height: 100vh;
+  text-align: center; /* Centrage du texte */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 10px; /* Coins arrondis */
+  margin-right: 100px;
+}
+
+p {
+  
+  font-size: 18px;
+  color: #333;
+  margin-left: 15px;
+}
+
+.car-container{
+  border: 4px solid #ccc;
+  padding: 20px;
+  margin: 30px auto;
+  width: 350px;
+  height: 350px;
+  text-align: center; /* Centrage du texte */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 10px; /* Coins arrondis */
+  margin-left: 50px;
+}
+
+.car-details-container{
+  border: 4px solid #ccc;
+  width: 90%;
+  height: 100px;
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 10px; /* Coins arrondis */
+  margin-top: 55%;
+  margin-left: 10px;  
+  padding: 0px;
+}
+
+.show-button{
+  display: block;
+  padding: 10px 20px;
+  background-color:blue; /* Vert */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 19px;
+}
+
+.buy-button{
+  display: block;
+  padding: 10px 20px;
+  background-color:coral; /* Vert */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 32px;
+}
+
+
+.detail{
+  margin-top: 10px;
+  margin-bottom: 3px;
+  margin-left: -200px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; 
+  width: 18%;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.connect-button, .disconnect-button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 60px;
+}
+
+.disconnect-button {
+  background-color: red;
+  margin-right: 20px;
+}
+.connect-button {
+  background-color: #00B0BD;
+}
+
+
+.create-button{
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 60px;
+  background-color: blue; 
+}
+
+.car-sections {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  gap: 20px;
+}
+
+.my-cars-section {
+  flex: 0 0 20%;
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: #f0f4f8;;
+}
+
+.available-cars-section {
+  flex: 0 0 75%; 
+  border-radius: 5px;
+  background-color: #e6f7ff;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.car-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+}
+
+.image-container{
+  height:150px;
+  padding: 0px;
+}
+.car-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.car-card p {
+  margin: 10px 0;
+}
+
+.car-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.car-card a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.car-card strong {
+  font-weight: bold;
+  color: #343a40;
+}
+.car-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap:10px
+}
+
+.history-button, .sell-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.history-button {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.history-button:hover {
+  background-color: #138496;
+}
+
+.sell-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.sell-button:hover {
+  background-color: #218838;
+}
+
