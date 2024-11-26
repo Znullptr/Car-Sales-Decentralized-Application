@@ -58,7 +58,7 @@ Pour lancer le projet, suivez ces étapes :
    - Lancez Ganache pour créer un environnement de développement local pour vos transactions Blockchain.
   
 2. **Installer les dépendances** :
-    - Naviguez dans le répertoire du projet et exécuter cette commande :
+    - Naviguez dans le répertoire du **car-sale-blockchain** et exécuter cette commande :
        ```bash
        npm install 
        ```
@@ -70,7 +70,7 @@ Pour lancer le projet, suivez ces étapes :
      ```
 
 3. **Frontend** :
-   - Naviguez dans le répertoire du frontend et démarrez l'application React :
+   - Retourner au dossier **root** du projet et Démarrez l'application React :
      ```bash
      npm start
      ```
